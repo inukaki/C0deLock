@@ -8,12 +8,12 @@ module.exports = {
         const raw = new ActionRowBuilder()
             .addComponents(
                 new ButtonBuilder()
-                    .setCustomId('lock')
-                    .setLabel('鍵をかける')
+                    .setCustomId('unlock')
+                    .setLabel('🔓 開ける')
                     .setStyle(ButtonStyle.Primary),
                 new ButtonBuilder()
-                    .setCustomId('unlock')
-                    .setLabel('鍵を解除する')
+                    .setCustomId('lock')
+                    .setLabel('🔒 閉める')
                     .setStyle(ButtonStyle.Danger),
             );
         await interaction.reply({ content: '部室の鍵を操作するボタンを作成しました', components: [raw] });
