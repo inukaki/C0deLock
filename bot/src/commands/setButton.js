@@ -16,6 +16,6 @@ module.exports = {
                     .setLabel('🔒 閉める')
                     .setStyle(ButtonStyle.Danger),
             );
-        await interaction.reply({ content: '部室の鍵を操作するボタンを作成しました', components: [raw] });
+        await interaction.reply({ components: [raw] });
     },
 };
